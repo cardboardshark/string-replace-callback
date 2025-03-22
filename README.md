@@ -33,7 +33,7 @@ tokenMap.set('phoneNumberRegexp', (match) => <PhoneNumber number={match} />)
 
 stringReplaceCallback('User profile data...', tokenMap);
 ```
-_( why a Map and not an object? Because maps rememember their insert order, and objects keys can't be regexps. )_
+_( why a Map and not an object? Because maps remember their insert order, and objects keys can't be regexps. )_
 
 # Comparison to other projects
 This is inspired by https://www.npmjs.com/package/react-string-replace/v/1.1.1, but with Typescript and untethered from React.
