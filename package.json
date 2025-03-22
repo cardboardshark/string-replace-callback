@@ -1,0 +1,19 @@
+{
+  "name": "string-replace-callback",
+  "version": "1.0.0",
+  "description": "Safely replace haystack strings with React Components, JSX, or any arbitrary object.",
+  "keywords": [
+    "string",
+    "replacement",
+    "jsx",
+    "react"
+  ],
+  "license": "MIT",
+  "author": "cardboardshark",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "types.d.ts",
+  "scripts": {
+    "test": "test"
+  }
+}
