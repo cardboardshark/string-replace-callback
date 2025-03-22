@@ -12,8 +12,5 @@
   "author": "cardboardshark",
   "type": "module",
   "main": "src/index.ts",
-  "types": "types.d.ts",
-  "scripts": {
-    "test": "test"
-  }
+  "types": "types.d.ts"
 }
