@@ -1,3 +1,11 @@
+import {
+  NeedleReplacerMap,
+  ReplacerFunction,
+  Output,
+  Needle,
+  TokenArray,
+} from "./types";
+
 /**
  * Replace all instances of a given needle with anything defined by the callback.
  * Any passed regular expressions MUST have a capture group. i.e: `/(Username)/gmi`
