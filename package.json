@@ -1,16 +1,37 @@
 {
-  "name": "string-replace-callback",
-  "version": "1.0.1",
-  "description": "Safely replace haystack strings with React Components, JSX, or any arbitrary object.",
-  "keywords": [
-    "string",
-    "replacement",
-    "jsx",
-    "react"
-  ],
-  "license": "MIT",
-  "author": "cardboardshark",
-  "type": "module",
-  "main": "src/index.ts",
-  "types": "src/types.d.ts"
+    "name": "string-replace-callback",
+    "version": "1.0.2",
+    "description": "Safely replace strings with React Components, JSX, or any arbitrary object.",
+    "keywords": [
+        "string",
+        "replacement",
+        "jsx",
+        "react"
+    ],
+    "compile": true,
+    "license": "MIT",
+    "author": "cardboardshark",
+    "type": "module",
+    "main": "src/index.ts",
+    "types": "src/types.d.ts",
+    "scripts": {
+        "build": "tsc --build",
+        "test": "ava"
+    },
+    "devDependencies": {
+        "@ava/typescript": "^5.0.0",
+        "ava": "^6.2.0",
+        "typescript": "^5.8.2"
+    },
+    "ava": {
+        "files": [
+            "*.test.(ts|js)"
+        ],
+        "typescript": {
+            "rewritePaths": {
+                "src/": "dist/"
+            },
+            "compile": "tsc"
+        }
+    }
 }
